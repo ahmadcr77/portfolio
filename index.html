@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphic Design Portfolio</title>
+    <title>Ahmad Ibrahem | IT Engineer & Graphic Designer</title>
     <style>
         /* Modern Reset & Dark Theme Base */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -34,6 +34,206 @@
         .nav-links a { color: #94a3b8; text-decoration: none; transition: color 0.2s; }
         .nav-links a:hover { color: #38bdf8; }
 
+        /* Hero Section */
+        .hero {
+            padding: 6rem 0 4rem;
+            max-width: 800px;
+        }
+        .hero h1 { font-size: 2.8rem; color: #fff; margin-bottom: 1rem; line-height: 1.2; }
+        .hero p { font-size: 1.2rem; color: #94a3b8; margin-bottom: 2rem; }
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        .btn:hover { opacity: 0.9; }
+
+        /* Section Styling */
+        section { padding: 4rem 0; }
+        .section-title { font-size: 1.75rem; color: #fff; margin-bottom: 2rem; }
+
+        /* Portfolio Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: #161b22;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #21262d;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #38bdf8;
+        }
+        .card-img {
+            width: 100%;
+            height: 220px;
+            background: #21262d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #484f58;
+            font-size: 0.9rem;
+        }
+        .card-body { padding: 1.5rem; }
+        .card-tag { font-size: 0.75rem; color: #38bdf8; text-transform: uppercase; font-weight: 600; margin-bottom: 0.5rem; }
+        .card-title { font-size: 1.25rem; color: #fff; margin-bottom: 0.5rem; }
+        .card-desc { color: #8b949e; font-size: 0.95rem; }
+
+        /* Skills Tags */
+        .skills-category { margin-bottom: 2rem; }
+        .skills-category h3 { font-size: 1.1rem; color: #94a3b8; margin-bottom: 1rem; }
+        .skills-list { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+        .skill-chip {
+            background: #21262d;
+            color: #c9d1d9;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid #30363d;
+        }
+
+        /* Contact Details */
+        .contact-info { margin-top: 1rem; color: #94a3b8; font-size: 1rem; }
+        .contact-info a { color: #38bdf8; text-decoration: none; }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #1e293b;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            text-align: center;
+            color: #6e7681;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <a href="#" class="logo">AHMAD IBRAHEM</a>
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero -->
+        <header class="hero">
+            <h1>IT Engineer & Graphic Designer</h1>
+            <p>Combining IT engineering, network security, and data analysis with modern graphic design, brand identity creation, and visual storytelling.</p>
+            <a href="#work" class="btn">Explore Portfolio</a>
+        </header>
+
+        <!-- Section 1: Featured Work & Projects -->
+        <section id="work">
+            <h2 class="section-title">Featured Work & Projects</h2>
+            <div class="grid">
+                
+                <!-- Project 1: Brand Identity & Graphic Design -->
+                <div class="card">
+                    <div class="card-img">[ Graphic Design / Logo Showcase ]</div>
+                    <div class="card-body">
+                        <div class="card-tag">Graphic Design & Branding</div>
+                        <h3 class="card-title">Brand Identity & Logo Design</h3>
+                        <p class="card-desc">Creating complete visual assets, custom logos, social media layouts, and promotional poster designs using Adobe Photoshop.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: Graduation Project -->
+                <div class="card">
+                    <div class="card-img">[ Apache Kafka & Flink Diagram ]</div>
+                    <div class="card-body">
+                        <div class="card-tag">IT Engineering - Graduation Project</div>
+                        <h3 class="card-title">Data Analysis Pipeline</h3>
+                        <p class="card-desc">Real-time data stream processing and analysis architecture built using Apache Kafka and Apache Flink.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3: Academic Network Security Project -->
+                <div class="card">
+                    <div class="card-img">[ DMZ Network Topology ]</div>
+                    <div class="card-body">
+                        <div class="card-tag">Systems & Networks</div>
+                        <h3 class="card-title">DMZ Network Architecture</h3>
+                        <p class="card-desc">Secure network design isolating internal subnets from public traffic using demilitarized zone (DMZ) architecture and router configuration.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 2: About Me -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p style="color: #8b949e; max-width: 750px; margin-bottom: 1rem;">
+                I am an Information Technology Graduate specializing in Systems and Computer Networks from Latakia University (2020–2025). Alongside my technical background in network security, data analysis, and accounting operations, I work as a Graphic Designer crafting memorable visual identities, logos, and digital layouts.
+            </p>
+            <p style="color: #8b949e; max-width: 750px;">
+                My unique blend of analytical engineering problem-solving and visual creativity enables me to deliver clean, highly structured, and aesthetically compelling visual and technical solutions.
+            </p>
+        </section>
+
+        <!-- Section 3: Skills & Tools -->
+        <section id="skills">
+            <h2 class="section-title">Skills & Expertise</h2>
+            
+            <div class="skills-category">
+                <h3>Graphic & Visual Design</h3>
+                <div class="skills-list">
+                    <span class="skill-chip">Adobe Photoshop</span>
+                    <span class="skill-chip">Brand Identity & Logos</span>
+                    <span class="skill-chip">Layout & Masking</span>
+                    <span class="skill-chip">Poster & Event Collateral</span>
+                    <span class="skill-chip">Vector Assets</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>IT & Network Engineering</h3>
+                <div class="skills-list">
+                    <span class="skill-chip">Computer Networks</span>
+                    <span class="skill-chip">Network Security (DMZ)</span>
+                    <span class="skill-chip">Router Configuration</span>
+                    <span class="skill-chip">Apache Kafka & Flink</span>
+                    <span class="skill-chip">Data Processing</span>
+                    <span class="skill-chip">Microsoft Office Suite</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Contact -->
+        <section id="contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <p style="color: #8b949e; margin-bottom: 1rem;">Feel free to reach out for design collaborations, network engineering projects, or technical inquiries.</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:ahmad7ibrahem@gmail.com">ahmad7ibrahem@gmail.com</a></p>
+                <p><strong>Location:</strong> Tartous, Syria</p>
+            </div>
+            <br>
+            <a href="mailto:ahmad7ibrahem@gmail.com" class="btn">Send an Email</a>
+        </section>
+
+        <footer>
+            <p>© 2026 Ahmad Ibrahem. Designed and hosted on GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
         /* Hero Section */
         .hero {
             padding: 6rem 0 4rem;
