@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Portfolio</title>
+    <style>
+        /* Modern Reset & Dark Theme Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #0d0e12;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .logo { font-size: 1.25rem; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: -0.5px; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: #94a3b8; text-decoration: none; transition: color 0.2s; }
+        .nav-links a:hover { color: #38bdf8; }
+
+        /* Hero Section */
+        .hero {
+            padding: 6rem 0 4rem;
+            max-width: 800px;
+        }
+        .hero h1 { font-size: 3rem; color: #fff; margin-bottom: 1rem; line-height: 1.2; }
+        .hero p { font-size: 1.25rem; color: #94a3b8; margin-bottom: 2rem; }
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        .btn:hover { opacity: 0.9; }
+
+        /* Section Styling */
+        section { padding: 4rem 0; }
+        .section-title { font-size: 1.75rem; color: #fff; margin-bottom: 2rem; }
+
+        /* Portfolio Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: #161b22;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #21262d;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #38bdf8;
+        }
+        .card-img {
+            width: 100%;
+            height: 220px;
+            background: #21262d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #484f58;
+            font-size: 0.9rem;
+        }
+        .card-body { padding: 1.5rem; }
+        .card-tag { font-size: 0.75rem; color: #38bdf8; text-transform: uppercase; font-weight: 600; margin-bottom: 0.5rem; }
+        .card-title { font-size: 1.25rem; color: #fff; margin-bottom: 0.5rem; }
+        .card-desc { color: #8b949e; font-size: 0.95rem; }
+
+        /* Skills Tags */
+        .skills-list { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+        .skill-chip {
+            background: #21262d;
+            color: #c9d1d9;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid #30363d;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #1e293b;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            text-align: center;
+            color: #6e7681;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <a href="#" class="logo">[YOUR NAME]</a>
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero -->
+        <header class="hero">
+            <h1>Graphic Designer & Visual Communicator</h1>
+            <p>Specializing in brand identity, logo systems, and digital layouts. Turning complex ideas into sleek, functional visual experiences.</p>
+            <a href="#work" class="btn">View Featured Work</a>
+        </header>
+
+        <!-- Section 1: Featured Work -->
+        <section id="work">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid">
+                
+                <!-- Project 1 Placeholder -->
+                <div class="card">
+                    <div class="card-img">[ Add Image / Mockup Here ]</div>
+                    <div class="card-body">
+                        <div class="card-tag">Brand Identity & Logo</div>
+                        <h3 class="card-title">Brand Identity System</h3>
+                        <p class="card-desc">Visual identity design including color palette system, typography pairing, and logo design.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 Placeholder -->
+                <div class="card">
+                    <div class="card-img">[ Add Image / Mockup Here ]</div>
+                    <div class="card-body">
+                        <div class="card-tag">Layout & Print Design</div>
+                        <h3 class="card-title">Event & Forum Collateral</h3>
+                        <p class="card-desc">Print layouts, invitations, and promotional social media assets for large-scale events.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 Placeholder -->
+                <div class="card">
+                    <div class="card-img">[ Add Image / Mockup Here ]</div>
+                    <div class="card-body">
+                        <div class="card-tag">Digital Design</div>
+                        <h3 class="card-title">Vector Assets & Graphics</h3>
+                        <p class="card-desc">Custom vector illustrations, promotional graphics, and modern social media templates.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 2: About -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p style="color: #8b949e; max-width: 700px;">
+                I’m a designer focused on creating clean, memorable visual assets. My work bridges strong technical precision with aesthetic problem-solving—whether crafting distinct visual identities, designing event materials, or perfecting digital graphics.
+            </p>
+        </section>
+
+        <!-- Section 3: Skills & Tools -->
+        <section id="skills">
+            <h2 class="section-title">Tools & Capabilities</h2>
+            <div class="skills-list">
+                <span class="skill-chip">Adobe Photoshop</span>
+                <span class="skill-chip">Logo & Identity Design</span>
+                <span class="skill-chip">Vector Graphics</span>
+                <span class="skill-chip">Layout & Masking</span>
+                <span class="skill-chip">Color Theory</span>
+                <span class="skill-chip">Typography</span>
+                <span class="skill-chip">Social Media Design</span>
+            </div>
+        </section>
+
+        <!-- Section 4: Contact -->
+        <section id="contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <p style="color: #8b949e; margin-bottom: 1.5rem;">Interested in collaborating or have a project in mind?</p>
+            <a href="mailto:your-email@example.com" class="btn">Send an Email</a>
+        </section>
+
+        <footer>
+            <p>© 2026 [YOUR NAME]. Designed and hosted on GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
